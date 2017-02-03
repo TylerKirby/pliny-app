@@ -1,0 +1,22 @@
+{
+  "name": "pliny-app",
+  "description": "Simple web app commentary for two letters of Pliny",
+  "main": "app/app.js",
+  "authors": [
+    "Tyler Kirby <joseph.kirby12@ncf.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/TylerKirby/pliny-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.6.1",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}
