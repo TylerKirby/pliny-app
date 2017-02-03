@@ -1,0 +1,19 @@
+<!--
+TODO: Create css thumbnail class
+TODO: Create css letter-list-item class
+TODO: Create css letters
+TODO: Create css thumb class
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- Thumbnail list of letters -->
+      <ul class="letters">
+        <li ng-repeat="letter in $ctrl.letters" class="thumbnail letter-list-item">
+          <a href="#!/letters/{{letter.id}}" class="thumb"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
