@@ -3,5 +3,6 @@
  */
 angular.module("pliny-app", [
   "core",
-  "letterList"
+  "letterList",
+  "ngRoute"
 ]);

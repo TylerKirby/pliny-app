@@ -1,4 +1,4 @@
 /**
  * Created by Tyler on 2/3/17.
  */
-angular.module('letterList');
+angular.module('letterList', ['core.letter']);
