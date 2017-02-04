@@ -7,11 +7,19 @@ TODO: Create css thumb class
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-12">
-      <!-- Thumbnail list of letters -->
-      <ul class="letters">
-        <li ng-repeat="letter in $ctrl.letters">
-          <a href="#!/letters/{{letter.id}}"></a>
+    <!-- Search bar -->
+    <div class="col-md-2">
+      <p>
+        Search:
+        <input ng-model="$ctrl.query" />
+      </p>
+    </div>
+    <!-- Letters -->
+    <div class="col-md-10">
+      <ul>
+        <li ng-repeat="letter in $ctrl.letters | filter:$ctrl.query">
+          <a href="#!/letters/{{letter.id}}">{{letter.id}}</a>
+          <p>{{letter.description}}</p>
         </li>
       </ul>
     </div>

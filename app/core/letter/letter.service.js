@@ -1,6 +1,8 @@
 /**
  * Created by Tyler on 2/3/17.
  */
+'use strict';
+
 angular.module('core.letter').factory('Letter', ['$resource',
   function ($resource) {
     return $resource('letters/:letterId.json', {}, {
