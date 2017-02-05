@@ -3,8 +3,8 @@
  */
 'use strict';
 
-angular.module("pliny-app", [
-  "core",
-  "letterList",
-  "ngRoute"
+angular.module('pliny-app', [
+  'ngRoute',
+  'core',
+  'letterList'
 ]);
