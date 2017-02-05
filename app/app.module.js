@@ -6,5 +6,6 @@
 angular.module('pliny-app', [
   'ngRoute',
   'core',
+  'letterViewer',
   'letterList'
 ]);

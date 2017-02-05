@@ -13,10 +13,10 @@ angular.
         when('/letters', {
           template: '<letter-list></letter-list>'
         }).
-        // TODO: Uncomment once letter-detail is ready.
-        // when('/letters/:letterId', {
-        //   template: '<letter-detail></letter-detail>'
-        // }).
+
+        when('/letters/:letterId', {
+          template: '<letter-viewer></letter-viewer>'
+        }).
         otherwise('/letters');
     }
 ]);

@@ -1,0 +1,22 @@
+<!-- Letter Title and salutary -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12"></div>
+    <h1>{{$ctrl.letter.id}}</h1>
+    <h2>{{$ctrl.letter.salutary}}</h2>
+    <h3>{{$ctrl.letter.description}}</h3>
+    <p>wtf is going on</p>
+  </div>
+</div>
+  <!-- Letter viewer with commentary -->
+<div class="row">
+  <!-- Letter text -->
+  <div class="col-md-7">
+    <p ng-repeat="text in $ctrl.letter.text">{{text}}</p>
+  </div>
+  <!-- Letter commentary -->
+  <div class="col-md-5">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, aut culpa cum cupiditate doloremque error ex illo inventore, laborum laudantium magni necessitatibus nisi officiis omnis quam quibusdam, tempore voluptatem!</p>
+  </div>
+</div>
+
