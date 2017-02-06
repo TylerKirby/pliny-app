@@ -4,6 +4,7 @@
 'use strict';
 
 angular.module('pliny-app', [
+  'ngAnimate',
   'ngRoute',
   'core',
   'letterViewer',

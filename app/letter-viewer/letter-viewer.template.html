@@ -2,21 +2,25 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12"></div>
-    <h1>{{$ctrl.letter.id}}</h1>
+    <h1>{{$ctrl.letter.title}}</h1>
     <h2>{{$ctrl.letter.salutary}}</h2>
     <h3>{{$ctrl.letter.description}}</h3>
-    <p>wtf is going on</p>
   </div>
 </div>
   <!-- Letter viewer with commentary -->
 <div class="row">
   <!-- Letter text -->
   <div class="col-md-7">
-    <p ng-repeat="text in $ctrl.letter.text">{{text}}</p>
+    <p ng-repeat="(key, value) in $ctrl.letter.text" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+      {{key}}. {{value}}
+    </p>
   </div>
   <!-- Letter commentary -->
   <div class="col-md-5">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, aut culpa cum cupiditate doloremque error ex illo inventore, laborum laudantium magni necessitatibus nisi officiis omnis quam quibusdam, tempore voluptatem!</p>
+    <h2>Commentary</h2>
+    <span ng-show="hoverEdit">
+      <p>Im here!</p>
+    </span>
   </div>
 </div>
 
