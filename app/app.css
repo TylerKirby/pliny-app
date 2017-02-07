@@ -1,0 +1,22 @@
+.commentary {
+  display: none;
+}
+
+.commentaryText:hover {
+  background: yellow;
+}
+
+.commentaryText:hover .commentary {
+  display: block;
+}
+
+.letterList ul {
+  list-style: none;
+}
+
+.letterList li {
+  border: dotted;
+  border-radius: 10px;
+}
+
+

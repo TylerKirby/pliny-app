@@ -8,19 +8,16 @@
   </div>
 </div>
   <!-- Letter viewer with commentary -->
-<div class="row">
+<div class="row commentaryText" ng-repeat="(key, value) in $ctrl.letter.text">
   <!-- Letter text -->
-  <div class="col-md-7">
-    <p ng-repeat="(key, value) in $ctrl.letter.text" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+  <div class="col-md-7" >
+    <p>
       {{key}}. {{value}}
     </p>
   </div>
   <!-- Letter commentary -->
   <div class="col-md-5">
-    <h2>Commentary</h2>
-    <span ng-show="hoverEdit">
-      <p>Im here!</p>
-    </span>
+    <p class="commentary">{{$ctrl.letter.commentary[key]}}</p>
   </div>
 </div>
 

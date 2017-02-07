@@ -8,7 +8,7 @@ TODO: Create css thumb class
 <div class="row">
   <div class="col-md-12">
     <h1>Pliny's Letters Digital Commentary</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquam assumenda consequuntur cum eius, eos exercitationem fuga labore laudantium mollitia nulla officiis praesentium, quaerat quidem. Assumenda impedit minus odit!</p>
+    <p>Select a letter below to view its text and commentary. Search using the search box to more easily find a specific letter.</p>
   </div>
 </div>
 <!-- Letter List -->
@@ -22,10 +22,10 @@ TODO: Create css thumb class
       </p>
     </div>
     <!-- Letters -->
-    <div class="col-md-10">
+    <div class="col-md-10 letterList">
       <ul>
         <li ng-repeat="letter in $ctrl.letters | filter:$ctrl.query">
-          <a href="#!/letters/{{letter.id}}">{{letter.id}}</a>
+          <a href="#!/letters/{{letter.id}}">{{letter.title}}</a>
           <p>{{letter.description}}</p>
         </li>
       </ul>

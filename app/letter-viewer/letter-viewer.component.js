@@ -13,13 +13,13 @@ angular.
         var self = this;
         self.letter = Letter.get({letterId: $routeParams.letterId}, function(letter) {});
 
-        self.hoverIn = function() {
-          this.hoverEdit = true;
+        self.hoverOver = function() {
+          self.commentaryView = true;
         };
 
         self.hoverOut = function() {
-          this.hoverEdit = false;
-        };
+          self.commentaryView = false;
+        }
       }
     ]
   }
