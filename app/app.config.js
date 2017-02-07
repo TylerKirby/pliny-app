@@ -1,4 +1,6 @@
 /**
+ * Configure view for application.
+ *
  * Created by Tyler on 2/4/17.
  */
 'use strict';

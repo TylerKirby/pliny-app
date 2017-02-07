@@ -1,4 +1,7 @@
 /**
+ * Tests letterList module.
+ * TODO: Fix Karma issue; Karma not recognizing modules
+ *
  * Created by Tyler on 2/5/17.
  */
 'use strict';

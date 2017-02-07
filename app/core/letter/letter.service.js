@@ -1,4 +1,6 @@
 /**
+ * Custom service for handling low-level http requests.
+ *
  * Created by Tyler on 2/3/17.
  */
 'use strict';
